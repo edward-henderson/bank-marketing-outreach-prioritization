@@ -1,0 +1,64 @@
+{
+  "source": "bank-additional-full.csv",
+  "source_sha256": "74adfc578bf77a7ff4bb1ba4a9f8709d9e3c6907342959c2c8416847e0afb4d8",
+  "blocks": {
+    "development": {
+      "first_source_row_id": 1,
+      "last_source_row_id": 24712,
+      "records": 24712,
+      "subscriptions": 1188,
+      "subscription_rate": 0.04807381029459372
+    },
+    "validation": {
+      "first_source_row_id": 24713,
+      "last_source_row_id": 32950,
+      "records": 8238,
+      "subscriptions": 912,
+      "subscription_rate": 0.11070648215586307
+    },
+    "final_evaluation": {
+      "first_source_row_id": 32951,
+      "last_source_row_id": 41188,
+      "records": 8238,
+      "subscriptions": 2540,
+      "subscription_rate": 0.3083272638990046
+    }
+  },
+  "exact_repeated_rows_retained": 12,
+  "candidate_predictors": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "previous",
+    "poutcome"
+  ],
+  "predictor_assumptions": {
+    "client_fields": "Treat recorded client attributes as available when the list was prepared.",
+    "history_fields": "Previous contact count and outcome refer to completed prior campaigns.",
+    "unknown": "Preserved as an explicit category."
+  },
+  "excluded_current_outreach_fields": [
+    "duration",
+    "campaign"
+  ],
+  "held_pending_timing_confirmation": [
+    "contact",
+    "month",
+    "day_of_week",
+    "pdays",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed"
+  ],
+  "outcome": "y",
+  "row_id": "Source position excluding header. Identifier only.",
+  "stage_2_selection_count": 1647,
+  "stage_3_selection_count": 1647,
+  "final_block_handling": "Intake counts checked. Rows remain in source and are not exported for Stage 2."
+}
